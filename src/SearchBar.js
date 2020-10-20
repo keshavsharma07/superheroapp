@@ -4,8 +4,10 @@ function SearchBar(props) {
 const {handleChange, searchText} = props;
 
   return (
-    <div>
-      <input
+    <div className="container">
+    <div className="row">
+    <div className="col-sm-12 col-lg-12">
+    <input
         id="search-bar"
         type="search"
         placeholder="Hunt superheroes here..."
@@ -13,6 +15,14 @@ const {handleChange, searchText} = props;
         value={searchText}
       />
     </div>
+
+  </div>
+  </div>
+
+
+
+
+    
   );
 }
 

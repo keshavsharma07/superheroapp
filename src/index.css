@@ -5,52 +5,149 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f1f1f1;
+  background: #295557ea;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html{
+  font-size: 10px;
+}
+
 .navbar {
-  height: 70px;
-  border: 1px solid #e6e6e6;
+  height: 7rem;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  padding: 0 16px;
-  background: #fff;
+  padding: 0 1.6rem;
+  background: rgb(9, 25, 26);
 }
 #logo {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 800;
+  color: rgb(70, 105, 105);
+  font-family: serif;
 }
 .main {
-  width: 700px;
+  width: 70rem;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 #search-bar {
   width: 100%;
-  height: 50px;
-  padding-left: 10px;
-  font-size: 20px;
-  margin-bottom: 50px;
+  height: 5rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  border-radius: 2rem;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
 }
-.search-result {
-  display: flex;
-  background: #fff;
-  box-sizing: border-box;
-  margin-bottom: 20px
+::placeholder{
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  text-align: center;
+
+
 }
-.search-result .left img {
-  height: 160px
+
+
+.card:hover{
+
+  transition: all 0.5s ease;
+  transform: translateY(-2rem);
 }
-.search-result .right {
-  padding-left: 30px;
+
+.card{
+  background: rgb(83, 107, 107);
+  border-radius: 2rem;
+width: 68rem!important;
+text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-right: auto;
+  margin-left: auto;
 }
-.search-result .right h1 {
-  margin-top: 5px;
+
+
+
+.image {
+  width: 40%!important;
+  height: 40vh;
+  border-radius: 50%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+    justify-content: center;
+  
 }
+/* .search-result .right {
+  padding-left: 3rem;
+} */
+/* .search-result .right h1 {
+  margin-top: 15rem;
+  padding-left: 6rem;
+  justify-content: flex-end;
+  font-size: 5rem;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: normal;
+  text-transform:uppercase;
+} */
 .stats div {
-  font-size: 20px;
+  font-size: 2rem;
+}
+.bodycard{
+text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  word-spacing: .2rem;
+  padding-bottom: 2rem!important;
+}
+
+.name{
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  padding-left: 1rem;
+}
+
+@media(max-width: 768px){
+
+  .navbar{
+    width: auto;
+  }
+  #search-bar{
+    width: 30rem;
+    
+   
+  }
+  .image{
+    width: 26rem!important;
+    border-radius: 50%,
+    
+
+  }
+  .card{
+    width: 30rem!important;
+    justify-content: left;
+    text-align: center;
+    
+  }
+  .bodycard{
+    font-size: 1.3rem;
+  }
+  
+  .main{
+    width:fit-content;
+    
+
+  }
+ 
+    
 }

@@ -28,13 +28,16 @@ function App() {
   }
 
   return (
-    <div className="App">
+    
+      <div className="container">
       <Navbar />
+      
       <div className="main">
         <SearchBar searchText={searchText} handleChange={handleChange} />
         <SearchResults superheroData={superheroData} />
       </div>
-    </div>
+      </div>
+    
   );
 }
 
