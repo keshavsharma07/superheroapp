@@ -33,4 +33,5 @@ function SearchResultItem(props) {
   );
 }
 
+
 export default SearchResultItem;

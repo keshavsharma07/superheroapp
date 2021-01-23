@@ -12,12 +12,12 @@ function SearchResults(props) {
         {superheroData.map(superhero =>
         <SearchResultItem data={superhero} />
       )}
+      
         </div>
-
       </div>
-     
     </div>
   );
+
 }
 
 export default SearchResults;
